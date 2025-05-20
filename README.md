@@ -215,4 +215,5 @@ MIT License. See `LICENSE` file.
 ## 🧑‍💻 Author
 
 Abdullah Khalid
+
 Machine Learning Engineer | CV2X & Smart Mobility Enthusiast
