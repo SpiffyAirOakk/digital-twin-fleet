@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fleet Digital Twin</title>
+    <meta http-equiv="refresh" content="5">
+</head>
+<body>
+    <h1>Fleet Dashboard (Real-Time)</h1>
+    <table border="1">
+        <tr>
+            <th>Vehicle ID</th>
+            <th>Speed</th>
+            <th>Battery</th>
+            <th>Location</th>
+        </tr>
+        {% for vid, data in fleet.items() %}
+        <tr>
+            <td>{{ data.vehicle_id }}</td>
+            <td>{{ data.speed }} km/h</td>
+            <td>{{ data.battery }}%</td>
+            <td>{{ data.location }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
